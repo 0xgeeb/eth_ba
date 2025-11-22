@@ -19,6 +19,8 @@ export default function Home() {
       const response = await fetch(`/api/wallet?address=${encodeURIComponent(address)}`);
       const result = await response.json();
 
+      console.log('API Response:', result);
+
       if (!response.ok) {
         setError(result.error || 'Failed to fetch data');
         setData(null);
@@ -34,7 +36,11 @@ export default function Home() {
     }
   };
 
-  const aavePositions = data?.assetByProtocols?.aavev3?.chains?.ethereum?.protocolPositions || [];
+  const wallet = Array.isArray(data) ? data[0] : null;
+  const lendingPosition = wallet?.assetByProtocols?.aave3?.chains?.ethereum?.protocolPositions?.LENDING?.protocolPositions?.[0];
+  const supplyAssets = lendingPosition?.supplyAssets || [];
+  const borrowAssets = lendingPosition?.borrowAssets || [];
+  const hasAavePositions = supplyAssets.length > 0 || borrowAssets.length > 0;
 
   return (
     <div className="flex flex-col items-center min-h-screen bg-white p-8">
@@ -69,11 +75,14 @@ export default function Home() {
         {data && (
           <div>
             <h2 className="text-3xl font-bold mb-6 text-gray-800">AAVE Positions</h2>
-            {aavePositions.length > 0 ? (
+            {hasAavePositions ? (
               <div className="grid gap-6 md:grid-cols-2">
-                {aavePositions.map((position: any, index: number) => (
-                  <AavePositionCard key={index} position={position} />
-                ))}
+                {supplyAssets.length > 0 && (
+                  <AavePositionCard assets={supplyAssets} type="supply" />
+                )}
+                {borrowAssets.length > 0 && (
+                  <AavePositionCard assets={borrowAssets} type="borrow" />
+                )}
               </div>
             ) : (
               <div className="bg-gray-100 p-8 rounded-lg text-center text-gray-600">

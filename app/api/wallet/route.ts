@@ -12,7 +12,7 @@ export async function GET(request: NextRequest) {
     return NextResponse.json({ error: 'API key not configured' }, { status: 500 });
   }
   try {
-    const response = await fetch(`https://api.octav.fi/v1/wallet?addresses=${address}`,
+    const response = await fetch(`https://api.octav.fi/v1/portfolio?addresses=${address}`,
       {
         headers: {
           'Authorization': `Bearer ${apiKey}`
