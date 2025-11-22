@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "TBD",
+  title: "Octaave",
   description: "ETH Global Buenos Aires Hackathon Project",
 };
 
