@@ -1,0 +1,3028 @@
+[
+   {
+      "address":"0x895614c89bec7d11454312f740854d08cbf57a78",
+      "conversionRates":{
+         "ETH":"2771.59",
+         "SOL":"128.79642830311923",
+         "cbBTC":"84765.11934780398",
+         "EURC":"1.1507440412911314",
+         "BNB":"836.4192548328978"
+      },
+      "cashBalance":"0",
+      "closedPnl":"N/A",
+      "dailyIncome":"0",
+      "dailyExpense":"0",
+      "fees":"0",
+      "feesFiat":"0",
+      "lastUpdated":"1763774357476",
+      "openPnl":"N/A",
+      "networth":"23.06998706825787451594985029476284621942392230988004",
+      "priceAdapters":[
+         "octav"
+      ],
+      "totalCostBasis":"N/A",
+      "assetByProtocols":{
+         "wallet":{
+            "name":"Wallet",
+            "key":"wallet",
+            "value":"21.71110888259829189555302289180852838",
+            "totalCostBasis":"N/A",
+            "totalClosedPnl":"N/A",
+            "totalOpenPnl":"N/A",
+            "chains":{
+               "abstract":{
+                  "name":"Abstract",
+                  "key":"abstract",
+                  "value":"0",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "WALLET":{
+                        "assets":[
+                           
+                        ],
+                        "name":"wallet",
+                        "protocolPositions":[
+                           
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0",
+                        "unlockAt":"0"
+                     }
+                  }
+               },
+               "arbitrum":{
+                  "name":"Arbitrum",
+                  "key":"arbitrum",
+                  "value":"0",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "WALLET":{
+                        "assets":[
+                           
+                        ],
+                        "name":"wallet",
+                        "protocolPositions":[
+                           
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0",
+                        "unlockAt":"0"
+                     }
+                  }
+               },
+               "arbitrum_nova":{
+                  "name":"Arbitrum Nova",
+                  "key":"arbitrum_nova",
+                  "value":"0",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "WALLET":{
+                        "assets":[
+                           
+                        ],
+                        "name":"wallet",
+                        "protocolPositions":[
+                           
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0",
+                        "unlockAt":"0"
+                     }
+                  }
+               },
+               "avalanche":{
+                  "name":"Avalanche",
+                  "key":"avalanche",
+                  "value":"0",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "WALLET":{
+                        "assets":[
+                           
+                        ],
+                        "name":"wallet",
+                        "protocolPositions":[
+                           
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0",
+                        "unlockAt":"0"
+                     }
+                  }
+               },
+               "b2":{
+                  "name":"B2",
+                  "key":"b2",
+                  "value":"0",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "WALLET":{
+                        "assets":[
+                           
+                        ],
+                        "name":"wallet",
+                        "protocolPositions":[
+                           
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0",
+                        "unlockAt":"0"
+                     }
+                  }
+               },
+               "base":{
+                  "name":"Base",
+                  "key":"base",
+                  "value":"0",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "WALLET":{
+                        "assets":[
+                           
+                        ],
+                        "name":"wallet",
+                        "protocolPositions":[
+                           
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0",
+                        "unlockAt":"0"
+                     }
+                  }
+               },
+               "berachain":{
+                  "name":"Berachain",
+                  "key":"berachain",
+                  "value":"12.23365580161980338581302289180852838",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "WALLET":{
+                        "assets":[
+                           {
+                              "balance":"9.52279893907995",
+                              "chainContract":"berachain:0x0000000000000000000000000000000000000000",
+                              "chainKey":"berachain",
+                              "contract":"0x0000000000000000000000000000000000000000",
+                              "decimal":"18",
+                              "name":"berachain",
+                              "openPnl":"N/A",
+                              "price":"1.039",
+                              "priceSource":"debank",
+                              "symbol":"bera",
+                              "totalCostBasis":"N/A",
+                              "value":"9.89418809770406805"
+                           },
+                           {
+                              "balance":"8.7e-7",
+                              "chainContract":"berachain:0x0555e30da8f98308edb960aa94c0db47230d2b9c",
+                              "chainKey":"berachain",
+                              "contract":"0x0555e30da8f98308edb960aa94c0db47230d2b9c",
+                              "decimal":"8",
+                              "name":"wrapped btc",
+                              "openPnl":"N/A",
+                              "price":"84889.21",
+                              "priceSource":"debank",
+                              "symbol":"wbtc",
+                              "totalCostBasis":"N/A",
+                              "value":"0.0738536127"
+                           },
+                           {
+                              "balance":"9.78331416069e-7",
+                              "chainContract":"berachain:0x09d4214c03d01f49544c0448dbe3a27f768f2b34",
+                              "chainKey":"berachain",
+                              "contract":"0x09d4214c03d01f49544c0448dbe3a27f768f2b34",
+                              "decimal":"18",
+                              "name":"reservoir stablecoin",
+                              "openPnl":"N/A",
+                              "price":"1.0006003602161297",
+                              "priceSource":"debank",
+                              "symbol":"rusd",
+                              "totalCostBasis":"N/A",
+                              "value":"9.789187673293976602955681493e-7"
+                           },
+                           {
+                              "balance":"8.7065e-7",
+                              "chainContract":"berachain:0x4186bfc76e2e237523cbc30fd220fe055156b41f",
+                              "chainKey":"berachain",
+                              "contract":"0x4186bfc76e2e237523cbc30fd220fe055156b41f",
+                              "decimal":"18",
+                              "name":"kelpdao restaked eth",
+                              "openPnl":"N/A",
+                              "price":"2919.8208563053504",
+                              "priceSource":"debank",
+                              "symbol":"rseth",
+                              "totalCostBasis":"N/A",
+                              "value":"0.00254214202854225332576"
+                           },
+                           {
+                              "balance":"9.9999999998e-8",
+                              "chainContract":"berachain:0x4a8b5283e053a8b118eadc4981e8ec8659995652",
+                              "chainKey":"berachain",
+                              "contract":"0x4a8b5283e053a8b118eadc4981e8ec8659995652",
+                              "decimal":"18",
+                              "name":"rusd ot",
+                              "openPnl":"N/A",
+                              "price":"0.9967986879952047",
+                              "priceSource":"debank",
+                              "symbol":"rusd-ot",
+                              "totalCostBasis":"N/A",
+                              "value":"9.96798687975268726240095906e-8"
+                           },
+                           {
+                              "balance":"0.5000000434150392",
+                              "chainContract":"berachain:0x6969696969696969696969696969696969696969",
+                              "chainKey":"berachain",
+                              "contract":"0x6969696969696969696969696969696969696969",
+                              "decimal":"18",
+                              "name":"wrapped bera",
+                              "openPnl":"N/A",
+                              "price":"1.039",
+                              "priceSource":"debank",
+                              "symbol":"wbera",
+                              "totalCostBasis":"N/A",
+                              "value":"0.5195000451082257288"
+                           },
+                           {
+                              "balance":"0.10535930079390797",
+                              "chainContract":"berachain:0x7e768f47dfdd5dae874aac233f1bc5817137e453",
+                              "chainKey":"berachain",
+                              "contract":"0x7e768f47dfdd5dae874aac233f1bc5817137e453",
+                              "decimal":"18",
+                              "name":"bearn bgt",
+                              "openPnl":"N/A",
+                              "price":"0",
+                              "priceSource":"octav",
+                              "symbol":"ybgt",
+                              "totalCostBasis":"N/A",
+                              "value":"0"
+                           },
+                           {
+                              "balance":"0.09522017876287629",
+                              "chainContract":"berachain:0x978448a7866aed0146ad5c5e5d3d8424e2b16356",
+                              "chainKey":"berachain",
+                              "contract":"0x978448a7866aed0146ad5c5e5d3d8424e2b16356",
+                              "decimal":"18",
+                              "name":"oribgt-ot",
+                              "openPnl":"N/A",
+                              "price":"0",
+                              "priceSource":"octav",
+                              "symbol":"oribgtot",
+                              "totalCostBasis":"N/A",
+                              "value":"0"
+                           },
+                           {
+                              "balance":"8.73303695672e-7",
+                              "chainContract":"berachain:0x9b6761bf2397bb5a6624a856cc84a3a14dcd3fe5",
+                              "chainKey":"berachain",
+                              "contract":"0x9b6761bf2397bb5a6624a856cc84a3a14dcd3fe5",
+                              "decimal":"18",
+                              "name":"infrared bera",
+                              "openPnl":"N/A",
+                              "price":"1.067723990005348",
+                              "priceSource":"debank",
+                              "symbol":"ibera",
+                              "totalCostBasis":"N/A",
+                              "value":"9.32447306429323999444453856e-7"
+                           },
+                           {
+                              "balance":"0.02321721779943848",
+                              "chainContract":"berachain:0xac03caba51e17c86c921e1f6cbfbdc91f8bb2e6b",
+                              "chainKey":"berachain",
+                              "contract":"0xac03caba51e17c86c921e1f6cbfbdc91f8bb2e6b",
+                              "decimal":"18",
+                              "name":"infrared bgt",
+                              "openPnl":"N/A",
+                              "price":"1.036798280963869",
+                              "priceSource":"debank",
+                              "symbol":"ibgt",
+                              "totalCostBasis":"N/A",
+                              "value":"0.02407157150322155753294136827912"
+                           },
+                           {
+                              "balance":"0.17855137794341824",
+                              "chainContract":"berachain:0xbf2e152f460090ace91a456e3dee5acf703f27ad",
+                              "chainKey":"berachain",
+                              "contract":"0xbf2e152f460090ace91a456e3dee5acf703f27ad",
+                              "decimal":"18",
+                              "name":"porridge",
+                              "openPnl":"N/A",
+                              "price":"0.001381785365249902",
+                              "priceSource":"debank",
+                              "symbol":"prg",
+                              "totalCostBasis":"N/A",
+                              "value":"0.00024671968098741946855687370501248"
+                           },
+                           {
+                              "balance":"1.717846276660204",
+                              "chainContract":"berachain:0xfcbd14dc51f0a4d49d5e53c2e0950e0bc26d0dce",
+                              "chainKey":"berachain",
+                              "contract":"0xfcbd14dc51f0a4d49d5e53c2e0950e0bc26d0dce",
+                              "decimal":"18",
+                              "name":"honey",
+                              "openPnl":"N/A",
+                              "price":"1.0008180738915382",
+                              "priceSource":"debank",
+                              "symbol":"honey",
+                              "totalCostBasis":"N/A",
+                              "value":"1.7192516018488158204372322857928"
+                           }
+                        ],
+                        "name":"wallet",
+                        "protocolPositions":[
+                           
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"12.23365580161980338581302289180852838",
+                        "unlockAt":"0"
+                     }
+                  }
+               },
+               "binance":{
+                  "name":"Binance",
+                  "key":"binance",
+                  "value":"0",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "WALLET":{
+                        "assets":[
+                           
+                        ],
+                        "name":"wallet",
+                        "protocolPositions":[
+                           
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0",
+                        "unlockAt":"0"
+                     }
+                  }
+               },
+               "blast":{
+                  "name":"Blast",
+                  "key":"blast",
+                  "value":"0",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "WALLET":{
+                        "assets":[
+                           
+                        ],
+                        "name":"wallet",
+                        "protocolPositions":[
+                           
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0",
+                        "unlockAt":"0"
+                     }
+                  }
+               },
+               "bob":{
+                  "name":"BOB",
+                  "key":"bob",
+                  "value":"0",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "WALLET":{
+                        "assets":[
+                           
+                        ],
+                        "name":"wallet",
+                        "protocolPositions":[
+                           
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0",
+                        "unlockAt":"0"
+                     }
+                  }
+               },
+               "boba":{
+                  "name":"Boba",
+                  "key":"boba",
+                  "value":"0",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "WALLET":{
+                        "assets":[
+                           
+                        ],
+                        "name":"wallet",
+                        "protocolPositions":[
+                           
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0",
+                        "unlockAt":"0"
+                     }
+                  }
+               },
+               "bouncebit":{
+                  "name":"BounceBit",
+                  "key":"bouncebit",
+                  "value":"0",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "WALLET":{
+                        "assets":[
+                           
+                        ],
+                        "name":"wallet",
+                        "protocolPositions":[
+                           
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0",
+                        "unlockAt":"0"
+                     }
+                  }
+               },
+               "celo":{
+                  "name":"Celo",
+                  "key":"celo",
+                  "value":"0",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "WALLET":{
+                        "assets":[
+                           
+                        ],
+                        "name":"wallet",
+                        "protocolPositions":[
+                           
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0",
+                        "unlockAt":"0"
+                     }
+                  }
+               },
+               "core":{
+                  "name":"Core",
+                  "key":"core",
+                  "value":"0",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "WALLET":{
+                        "assets":[
+                           
+                        ],
+                        "name":"wallet",
+                        "protocolPositions":[
+                           
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0",
+                        "unlockAt":"0"
+                     }
+                  }
+               },
+               "corn":{
+                  "name":"Corn",
+                  "key":"corn",
+                  "value":"0",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "WALLET":{
+                        "assets":[
+                           
+                        ],
+                        "name":"wallet",
+                        "protocolPositions":[
+                           
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0",
+                        "unlockAt":"0"
+                     }
+                  }
+               },
+               "cronos":{
+                  "name":"Cronos",
+                  "key":"cronos",
+                  "value":"0",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "WALLET":{
+                        "assets":[
+                           
+                        ],
+                        "name":"wallet",
+                        "protocolPositions":[
+                           
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0",
+                        "unlockAt":"0"
+                     }
+                  }
+               },
+               "ethereum":{
+                  "name":"Ethereum",
+                  "key":"ethereum",
+                  "value":"9.47745308097848850974",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "WALLET":{
+                        "assets":[
+                           {
+                              "balance":"0.002697531951236786",
+                              "chainContract":"ethereum:0x0000000000000000000000000000000000000000",
+                              "chainKey":"ethereum",
+                              "contract":"0x0000000000000000000000000000000000000000",
+                              "decimal":"18",
+                              "name":"ethereum",
+                              "openPnl":"N/A",
+                              "price":"2771.59",
+                              "priceSource":"debank",
+                              "symbol":"eth",
+                              "totalCostBasis":"N/A",
+                              "value":"7.47645258072836370974"
+                           },
+                           {
+                              "balance":"2",
+                              "chainContract":"ethereum:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+                              "chainKey":"ethereum",
+                              "contract":"0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+                              "decimal":"6",
+                              "name":"usd coin",
+                              "openPnl":"N/A",
+                              "price":"1.0005002501250624",
+                              "priceSource":"debank",
+                              "symbol":"usdc",
+                              "totalCostBasis":"N/A",
+                              "value":"2.0010005002501248"
+                           }
+                        ],
+                        "name":"wallet",
+                        "protocolPositions":[
+                           
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"9.47745308097848850974",
+                        "unlockAt":"0"
+                     }
+                  }
+               },
+               "ethlink":{
+                  "name":"Etherlink",
+                  "key":"ethlink",
+                  "value":"0",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "WALLET":{
+                        "assets":[
+                           
+                        ],
+                        "name":"wallet",
+                        "protocolPositions":[
+                           
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0",
+                        "unlockAt":"0"
+                     }
+                  }
+               },
+               "everclear":{
+                  "name":"Everclear",
+                  "key":"everclear",
+                  "value":"0",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "WALLET":{
+                        "assets":[
+                           
+                        ],
+                        "name":"wallet",
+                        "protocolPositions":[
+                           
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0",
+                        "unlockAt":"0"
+                     }
+                  }
+               },
+               "fantom":{
+                  "name":"Fantom",
+                  "key":"fantom",
+                  "value":"0",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "WALLET":{
+                        "assets":[
+                           
+                        ],
+                        "name":"wallet",
+                        "protocolPositions":[
+                           
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0",
+                        "unlockAt":"0"
+                     }
+                  }
+               },
+               "flare":{
+                  "name":"Flare",
+                  "key":"flare",
+                  "value":"0",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "WALLET":{
+                        "assets":[
+                           
+                        ],
+                        "name":"wallet",
+                        "protocolPositions":[
+                           
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0",
+                        "unlockAt":"0"
+                     }
+                  }
+               },
+               "fraxtal":{
+                  "name":"Fraxtal",
+                  "key":"fraxtal",
+                  "value":"0",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "WALLET":{
+                        "assets":[
+                           
+                        ],
+                        "name":"wallet",
+                        "protocolPositions":[
+                           
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0",
+                        "unlockAt":"0"
+                     }
+                  }
+               },
+               "fuse":{
+                  "name":"Fuse",
+                  "key":"fuse",
+                  "value":"0",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "WALLET":{
+                        "assets":[
+                           
+                        ],
+                        "name":"wallet",
+                        "protocolPositions":[
+                           
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0",
+                        "unlockAt":"0"
+                     }
+                  }
+               },
+               "gnosis":{
+                  "name":"Gnosis",
+                  "key":"gnosis",
+                  "value":"0",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "WALLET":{
+                        "assets":[
+                           
+                        ],
+                        "name":"wallet",
+                        "protocolPositions":[
+                           
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0",
+                        "unlockAt":"0"
+                     }
+                  }
+               },
+               "hsk":{
+                  "name":"HashKey",
+                  "key":"hsk",
+                  "value":"0",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "WALLET":{
+                        "assets":[
+                           
+                        ],
+                        "name":"wallet",
+                        "protocolPositions":[
+                           
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0",
+                        "unlockAt":"0"
+                     }
+                  }
+               },
+               "hemi":{
+                  "name":"Hemi",
+                  "key":"hemi",
+                  "value":"0",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "WALLET":{
+                        "assets":[
+                           
+                        ],
+                        "name":"wallet",
+                        "protocolPositions":[
+                           
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0",
+                        "unlockAt":"0"
+                     }
+                  }
+               },
+               "hyperevm":{
+                  "name":"HyperEVM",
+                  "key":"hyperevm",
+                  "value":"0",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "WALLET":{
+                        "assets":[
+                           
+                        ],
+                        "name":"wallet",
+                        "protocolPositions":[
+                           
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0",
+                        "unlockAt":"0"
+                     }
+                  }
+               },
+               "hyperliquid":{
+                  "name":"Hyperliquid",
+                  "key":"hyperliquid",
+                  "value":"0",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "WALLET":{
+                        "assets":[
+                           
+                        ],
+                        "name":"wallet",
+                        "protocolPositions":[
+                           
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0",
+                        "unlockAt":"0"
+                     }
+                  }
+               },
+               "ink":{
+                  "name":"Ink",
+                  "key":"ink",
+                  "value":"0",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "WALLET":{
+                        "assets":[
+                           
+                        ],
+                        "name":"wallet",
+                        "protocolPositions":[
+                           
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0",
+                        "unlockAt":"0"
+                     }
+                  }
+               },
+               "iotex":{
+                  "name":"IoTeX",
+                  "key":"iotex",
+                  "value":"0",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "WALLET":{
+                        "assets":[
+                           
+                        ],
+                        "name":"wallet",
+                        "protocolPositions":[
+                           
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0",
+                        "unlockAt":"0"
+                     }
+                  }
+               },
+               "katana":{
+                  "name":"Katana",
+                  "key":"katana",
+                  "value":"0",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "WALLET":{
+                        "assets":[
+                           
+                        ],
+                        "name":"wallet",
+                        "protocolPositions":[
+                           
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0",
+                        "unlockAt":"0"
+                     }
+                  }
+               },
+               "kava":{
+                  "name":"Kava",
+                  "key":"kava",
+                  "value":"0",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "WALLET":{
+                        "assets":[
+                           
+                        ],
+                        "name":"wallet",
+                        "protocolPositions":[
+                           
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0",
+                        "unlockAt":"0"
+                     }
+                  }
+               },
+               "lens":{
+                  "name":"Lens",
+                  "key":"lens",
+                  "value":"0",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "WALLET":{
+                        "assets":[
+                           
+                        ],
+                        "name":"wallet",
+                        "protocolPositions":[
+                           
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0",
+                        "unlockAt":"0"
+                     }
+                  }
+               },
+               "lighter":{
+                  "name":"Lighter",
+                  "key":"lighter",
+                  "value":"0",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "WALLET":{
+                        "assets":[
+                           
+                        ],
+                        "name":"wallet",
+                        "protocolPositions":[
+                           
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0",
+                        "unlockAt":"0"
+                     }
+                  }
+               },
+               "linea":{
+                  "name":"Linea",
+                  "key":"linea",
+                  "value":"0",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "WALLET":{
+                        "assets":[
+                           
+                        ],
+                        "name":"wallet",
+                        "protocolPositions":[
+                           
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0",
+                        "unlockAt":"0"
+                     }
+                  }
+               },
+               "manta":{
+                  "name":"Manta",
+                  "key":"manta",
+                  "value":"0",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "WALLET":{
+                        "assets":[
+                           
+                        ],
+                        "name":"wallet",
+                        "protocolPositions":[
+                           
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0",
+                        "unlockAt":"0"
+                     }
+                  }
+               },
+               "mantle":{
+                  "name":"Mantle",
+                  "key":"mantle",
+                  "value":"0",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "WALLET":{
+                        "assets":[
+                           
+                        ],
+                        "name":"wallet",
+                        "protocolPositions":[
+                           
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0",
+                        "unlockAt":"0"
+                     }
+                  }
+               },
+               "merlin":{
+                  "name":"Merlin",
+                  "key":"merlin",
+                  "value":"0",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "WALLET":{
+                        "assets":[
+                           
+                        ],
+                        "name":"wallet",
+                        "protocolPositions":[
+                           
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0",
+                        "unlockAt":"0"
+                     }
+                  }
+               },
+               "metis":{
+                  "name":"Metis",
+                  "key":"metis",
+                  "value":"0",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "WALLET":{
+                        "assets":[
+                           
+                        ],
+                        "name":"wallet",
+                        "protocolPositions":[
+                           
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0",
+                        "unlockAt":"0"
+                     }
+                  }
+               },
+               "mint":{
+                  "name":"Mint",
+                  "key":"mint",
+                  "value":"0",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "WALLET":{
+                        "assets":[
+                           
+                        ],
+                        "name":"wallet",
+                        "protocolPositions":[
+                           
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0",
+                        "unlockAt":"0"
+                     }
+                  }
+               },
+               "mode":{
+                  "name":"Mode",
+                  "key":"mode",
+                  "value":"0",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "WALLET":{
+                        "assets":[
+                           
+                        ],
+                        "name":"wallet",
+                        "protocolPositions":[
+                           
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0",
+                        "unlockAt":"0"
+                     }
+                  }
+               },
+               "morph":{
+                  "name":"Morph",
+                  "key":"morph",
+                  "value":"0",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "WALLET":{
+                        "assets":[
+                           
+                        ],
+                        "name":"wallet",
+                        "protocolPositions":[
+                           
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0",
+                        "unlockAt":"0"
+                     }
+                  }
+               },
+               "op_bnb":{
+                  "name":"opBNB",
+                  "key":"op_bnb",
+                  "value":"0",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "WALLET":{
+                        "assets":[
+                           
+                        ],
+                        "name":"wallet",
+                        "protocolPositions":[
+                           
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0",
+                        "unlockAt":"0"
+                     }
+                  }
+               },
+               "optimism":{
+                  "name":"Optimism",
+                  "key":"optimism",
+                  "value":"0",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "WALLET":{
+                        "assets":[
+                           
+                        ],
+                        "name":"wallet",
+                        "protocolPositions":[
+                           
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0",
+                        "unlockAt":"0"
+                     }
+                  }
+               },
+               "plasma":{
+                  "name":"Plasma",
+                  "key":"plasma",
+                  "value":"0",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "WALLET":{
+                        "assets":[
+                           
+                        ],
+                        "name":"wallet",
+                        "protocolPositions":[
+                           
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0",
+                        "unlockAt":"0"
+                     }
+                  }
+               },
+               "plasmatestnet":{
+                  "name":"Plasma Testnet",
+                  "key":"plasmatestnet",
+                  "value":"0",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "WALLET":{
+                        "assets":[
+                           
+                        ],
+                        "name":"wallet",
+                        "protocolPositions":[
+                           
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0",
+                        "unlockAt":"0"
+                     }
+                  }
+               },
+               "plume":{
+                  "name":"Plume",
+                  "key":"plume",
+                  "value":"0",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "WALLET":{
+                        "assets":[
+                           
+                        ],
+                        "name":"wallet",
+                        "protocolPositions":[
+                           
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0",
+                        "unlockAt":"0"
+                     }
+                  }
+               },
+               "polygon":{
+                  "name":"Polygon",
+                  "key":"polygon",
+                  "value":"0",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "WALLET":{
+                        "assets":[
+                           
+                        ],
+                        "name":"wallet",
+                        "protocolPositions":[
+                           
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0",
+                        "unlockAt":"0"
+                     }
+                  }
+               },
+               "polygon_zkevm":{
+                  "name":"Polygon zkEVM",
+                  "key":"polygon_zkevm",
+                  "value":"0",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "WALLET":{
+                        "assets":[
+                           
+                        ],
+                        "name":"wallet",
+                        "protocolPositions":[
+                           
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0",
+                        "unlockAt":"0"
+                     }
+                  }
+               },
+               "rari":{
+                  "name":"Rari",
+                  "key":"rari",
+                  "value":"0",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "WALLET":{
+                        "assets":[
+                           
+                        ],
+                        "name":"wallet",
+                        "protocolPositions":[
+                           
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0",
+                        "unlockAt":"0"
+                     }
+                  }
+               },
+               "rsk":{
+                  "name":"Rootstock",
+                  "key":"rsk",
+                  "value":"0",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "WALLET":{
+                        "assets":[
+                           
+                        ],
+                        "name":"wallet",
+                        "protocolPositions":[
+                           
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0",
+                        "unlockAt":"0"
+                     }
+                  }
+               },
+               "scroll":{
+                  "name":"Scroll",
+                  "key":"scroll",
+                  "value":"0",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "WALLET":{
+                        "assets":[
+                           
+                        ],
+                        "name":"wallet",
+                        "protocolPositions":[
+                           
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0",
+                        "unlockAt":"0"
+                     }
+                  }
+               },
+               "shib":{
+                  "name":"Shibarium",
+                  "key":"shib",
+                  "value":"0",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "WALLET":{
+                        "assets":[
+                           
+                        ],
+                        "name":"wallet",
+                        "protocolPositions":[
+                           
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0",
+                        "unlockAt":"0"
+                     }
+                  }
+               },
+               "solana":{
+                  "name":"Solana",
+                  "key":"solana",
+                  "value":"0",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "WALLET":{
+                        "assets":[
+                           
+                        ],
+                        "name":"wallet",
+                        "protocolPositions":[
+                           
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0",
+                        "unlockAt":"0"
+                     }
+                  }
+               },
+               "soneium":{
+                  "name":"Soneium",
+                  "key":"soneium",
+                  "value":"0",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "WALLET":{
+                        "assets":[
+                           
+                        ],
+                        "name":"wallet",
+                        "protocolPositions":[
+                           
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0",
+                        "unlockAt":"0"
+                     }
+                  }
+               },
+               "sonic":{
+                  "name":"Sonic",
+                  "key":"sonic",
+                  "value":"0",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "WALLET":{
+                        "assets":[
+                           
+                        ],
+                        "name":"wallet",
+                        "protocolPositions":[
+                           
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0",
+                        "unlockAt":"0"
+                     }
+                  }
+               },
+               "sophon":{
+                  "name":"Sophon",
+                  "key":"sophon",
+                  "value":"0",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "WALLET":{
+                        "assets":[
+                           
+                        ],
+                        "name":"wallet",
+                        "protocolPositions":[
+                           
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0",
+                        "unlockAt":"0"
+                     }
+                  }
+               },
+               "starknet":{
+                  "name":"Starknet",
+                  "key":"starknet",
+                  "value":"0",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "WALLET":{
+                        "assets":[
+                           
+                        ],
+                        "name":"wallet",
+                        "protocolPositions":[
+                           
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0",
+                        "unlockAt":"0"
+                     }
+                  }
+               },
+               "swellchain":{
+                  "name":"SwellChain",
+                  "key":"swellchain",
+                  "value":"0",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "WALLET":{
+                        "assets":[
+                           
+                        ],
+                        "name":"wallet",
+                        "protocolPositions":[
+                           
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0",
+                        "unlockAt":"0"
+                     }
+                  }
+               },
+               "tac":{
+                  "name":"TAC",
+                  "key":"tac",
+                  "value":"0",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "WALLET":{
+                        "assets":[
+                           
+                        ],
+                        "name":"wallet",
+                        "protocolPositions":[
+                           
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0",
+                        "unlockAt":"0"
+                     }
+                  }
+               },
+               "taiko":{
+                  "name":"Taiko",
+                  "key":"taiko",
+                  "value":"0",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "WALLET":{
+                        "assets":[
+                           
+                        ],
+                        "name":"wallet",
+                        "protocolPositions":[
+                           
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0",
+                        "unlockAt":"0"
+                     }
+                  }
+               },
+               "telos":{
+                  "name":"Telos",
+                  "key":"telos",
+                  "value":"0",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "WALLET":{
+                        "assets":[
+                           
+                        ],
+                        "name":"wallet",
+                        "protocolPositions":[
+                           
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0",
+                        "unlockAt":"0"
+                     }
+                  }
+               },
+               "unichain":{
+                  "name":"Unichain",
+                  "key":"unichain",
+                  "value":"0",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "WALLET":{
+                        "assets":[
+                           
+                        ],
+                        "name":"wallet",
+                        "protocolPositions":[
+                           
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0",
+                        "unlockAt":"0"
+                     }
+                  }
+               },
+               "wc":{
+                  "name":"World Chain",
+                  "key":"wc",
+                  "value":"0",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "WALLET":{
+                        "assets":[
+                           
+                        ],
+                        "name":"wallet",
+                        "protocolPositions":[
+                           
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0",
+                        "unlockAt":"0"
+                     }
+                  }
+               },
+               "xlayer":{
+                  "name":"X Layer",
+                  "key":"xlayer",
+                  "value":"0",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "WALLET":{
+                        "assets":[
+                           
+                        ],
+                        "name":"wallet",
+                        "protocolPositions":[
+                           
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0",
+                        "unlockAt":"0"
+                     }
+                  }
+               },
+               "era":{
+                  "name":"zkSync Era",
+                  "key":"era",
+                  "value":"0",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "WALLET":{
+                        "assets":[
+                           
+                        ],
+                        "name":"wallet",
+                        "protocolPositions":[
+                           
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0",
+                        "unlockAt":"0"
+                     }
+                  }
+               },
+               "zora":{
+                  "name":"Zora",
+                  "key":"zora",
+                  "value":"0",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "WALLET":{
+                        "assets":[
+                           
+                        ],
+                        "name":"wallet",
+                        "protocolPositions":[
+                           
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0",
+                        "unlockAt":"0"
+                     }
+                  }
+               }
+            }
+         },
+         "aave3":{
+            "name":"Aave V3",
+            "key":"aave3",
+            "value":"0.7705886287520929920076",
+            "totalCostBasis":"N/A",
+            "totalClosedPnl":"N/A",
+            "totalOpenPnl":"N/A",
+            "chains":{
+               "ethereum":{
+                  "name":"Ethereum",
+                  "key":"ethereum",
+                  "value":"0.7705886287520929920076",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "LENDING":{
+                        "assets":[
+                           
+                        ],
+                        "name":"Lending",
+                        "protocolPositions":[
+                           {
+                              "assets":[
+                                 
+                              ],
+                              "borrowAssets":[
+                                 {
+                                    "balance":"2.000001",
+                                    "chainContract":"ethereum:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+                                    "chainKey":"ethereum",
+                                    "contract":"0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+                                    "decimal":"6",
+                                    "name":"usd coin",
+                                    "openPnl":"N/A",
+                                    "price":"1.0005002501250624",
+                                    "priceSource":"debank",
+                                    "symbol":"usdc",
+                                    "totalCostBasis":"N/A",
+                                    "value":"2.0010015007503749250624"
+                                 }
+                              ],
+                              "dexAssets":[
+                                 
+                              ],
+                              "marginAssets":[
+                                 
+                              ],
+                              "baseAssets":[
+                                 
+                              ],
+                              "quoteAssets":[
+                                 
+                              ],
+                              "collateralizeNFTAssets":[
+                                 
+                              ],
+                              "side":"",
+                              "siteUrl":"https://app.aave.com",
+                              "healthRate":"0",
+                              "name":"weth",
+                              "rewardAssets":[
+                                 
+                              ],
+                              "supplyAssets":[
+                                 {
+                                    "balance":"0.001000000046724973",
+                                    "chainContract":"ethereum:0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+                                    "chainKey":"ethereum",
+                                    "contract":"0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+                                    "decimal":"18",
+                                    "name":"weth",
+                                    "openPnl":"N/A",
+                                    "price":"2771.59",
+                                    "priceSource":"debank",
+                                    "symbol":"weth",
+                                    "totalCostBasis":"N/A",
+                                    "value":"2.77159012950246791707"
+                                 }
+                              ],
+                              "totalCostBasis":"N/A",
+                              "totalClosedPnl":"N/A",
+                              "totalOpenPnl":"N/A",
+                              "unlockAt":"0",
+                              "vaultAddress":"",
+                              "poolAddress":"0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+                              "value":"0.7705886287520929920076"
+                           }
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0.7705886287520929920076",
+                        "unlockAt":"0"
+                     }
+                  }
+               }
+            }
+         },
+         "aquabera":{
+            "name":"AquaBera",
+            "key":"aquabera",
+            "value":"4.47920406384779143942392230988004e-18",
+            "totalCostBasis":"N/A",
+            "totalClosedPnl":"N/A",
+            "totalOpenPnl":"N/A",
+            "chains":{
+               "berachain":{
+                  "name":"Berachain",
+                  "key":"berachain",
+                  "value":"4.47920406384779143942392230988004e-18",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "YIELD":{
+                        "assets":[
+                           
+                        ],
+                        "name":"Yield",
+                        "protocolPositions":[
+                           {
+                              "assets":[
+                                 {
+                                    "balance":"4.167182873635427e-18",
+                                    "chainContract":"berachain:0x09d4214c03d01f49544c0448dbe3a27f768f2b34",
+                                    "chainKey":"berachain",
+                                    "contract":"0x09d4214c03d01f49544c0448dbe3a27f768f2b34",
+                                    "decimal":"18",
+                                    "name":"reservoir stablecoin",
+                                    "openPnl":"N/A",
+                                    "price":"1.0006003602161297",
+                                    "priceSource":"debank",
+                                    "symbol":"rusd",
+                                    "totalCostBasis":"N/A",
+                                    "value":"4.1696846844460947492776827468819e-18"
+                                 },
+                                 {
+                                    "balance":"3.105134297720762e-19",
+                                    "chainContract":"berachain:0x4a8b5283e053a8b118eadc4981e8ec8659995652",
+                                    "chainKey":"berachain",
+                                    "contract":"0x4a8b5283e053a8b118eadc4981e8ec8659995652",
+                                    "decimal":"18",
+                                    "name":"rusd ot",
+                                    "openPnl":"N/A",
+                                    "price":"0.9967986879952047",
+                                    "priceSource":"debank",
+                                    "symbol":"rusd-ot",
+                                    "totalCostBasis":"N/A",
+                                    "value":"3.0951937940169669014623956299814e-19"
+                                 }
+                              ],
+                              "borrowAssets":[
+                                 
+                              ],
+                              "dexAssets":[
+                                 
+                              ],
+                              "marginAssets":[
+                                 
+                              ],
+                              "baseAssets":[
+                                 
+                              ],
+                              "quoteAssets":[
+                                 
+                              ],
+                              "collateralizeNFTAssets":[
+                                 
+                              ],
+                              "side":"",
+                              "siteUrl":"https://app.aquabera.com",
+                              "healthRate":"0",
+                              "name":"AB-KODIAK-rUSD-rUSD-OT-500",
+                              "rewardAssets":[
+                                 
+                              ],
+                              "supplyAssets":[
+                                 
+                              ],
+                              "totalCostBasis":"N/A",
+                              "totalClosedPnl":"N/A",
+                              "totalOpenPnl":"N/A",
+                              "unlockAt":"0",
+                              "vaultAddress":"",
+                              "poolAddress":"0x20a49a266ae70d07ba066ef1f8b6e670216ab2a6",
+                              "value":"4.47920406384779143942392230988004e-18"
+                           }
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"4.47920406384779143942392230988004e-18",
+                        "unlockAt":"0"
+                     }
+                  }
+               }
+            }
+         },
+         "bearn":{
+            "name":"Bearn",
+            "key":"bearn",
+            "value":"0.087497430625311738264529597070328",
+            "totalCostBasis":"N/A",
+            "totalClosedPnl":"N/A",
+            "totalOpenPnl":"N/A",
+            "chains":{
+               "berachain":{
+                  "name":"Berachain",
+                  "key":"berachain",
+                  "value":"0.087497430625311738264529597070328",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "YIELD":{
+                        "assets":[
+                           
+                        ],
+                        "name":"Yield",
+                        "protocolPositions":[
+                           {
+                              "assets":[
+                                 {
+                                    "balance":"0.2000267962475393",
+                                    "chainContract":"berachain:0x7e768f47dfdd5dae874aac233f1bc5817137e453",
+                                    "chainKey":"berachain",
+                                    "contract":"0x7e768f47dfdd5dae874aac233f1bc5817137e453",
+                                    "decimal":"18",
+                                    "name":"bearn bgt",
+                                    "openPnl":"N/A",
+                                    "price":"0",
+                                    "priceSource":"octav",
+                                    "symbol":"ybgt",
+                                    "totalCostBasis":"N/A",
+                                    "value":"0"
+                                 }
+                              ],
+                              "borrowAssets":[
+                                 
+                              ],
+                              "dexAssets":[
+                                 
+                              ],
+                              "marginAssets":[
+                                 
+                              ],
+                              "baseAssets":[
+                                 
+                              ],
+                              "quoteAssets":[
+                                 
+                              ],
+                              "collateralizeNFTAssets":[
+                                 
+                              ],
+                              "side":"",
+                              "siteUrl":"https://bearn.sucks/",
+                              "healthRate":"0",
+                              "name":"styBGT",
+                              "rewardAssets":[
+                                 {
+                                    "balance":"0.08742590977108404",
+                                    "chainContract":"berachain:0xfcbd14dc51f0a4d49d5e53c2e0950e0bc26d0dce",
+                                    "chainKey":"berachain",
+                                    "contract":"0xfcbd14dc51f0a4d49d5e53c2e0950e0bc26d0dce",
+                                    "decimal":"18",
+                                    "name":"honey",
+                                    "openPnl":"N/A",
+                                    "price":"1.0008180738915382",
+                                    "priceSource":"debank",
+                                    "symbol":"honey",
+                                    "totalCostBasis":"N/A",
+                                    "value":"0.087497430625311738264529597070328"
+                                 }
+                              ],
+                              "supplyAssets":[
+                                 
+                              ],
+                              "totalCostBasis":"N/A",
+                              "totalClosedPnl":"N/A",
+                              "totalOpenPnl":"N/A",
+                              "unlockAt":"0",
+                              "vaultAddress":"",
+                              "poolAddress":"0x6f8ceaf347da79287e49a5c9f0a03b20bdfcb7d3",
+                              "value":"0.087497430625311738264529597070328"
+                           },
+                           {
+                              "assets":[
+                                 {
+                                    "balance":"0.06705574416054398",
+                                    "chainContract":"berachain:0x7e768f47dfdd5dae874aac233f1bc5817137e453",
+                                    "chainKey":"berachain",
+                                    "contract":"0x7e768f47dfdd5dae874aac233f1bc5817137e453",
+                                    "decimal":"18",
+                                    "name":"bearn bgt",
+                                    "openPnl":"N/A",
+                                    "price":"0",
+                                    "priceSource":"octav",
+                                    "symbol":"ybgt",
+                                    "totalCostBasis":"N/A",
+                                    "value":"0"
+                                 }
+                              ],
+                              "borrowAssets":[
+                                 
+                              ],
+                              "dexAssets":[
+                                 
+                              ],
+                              "marginAssets":[
+                                 
+                              ],
+                              "baseAssets":[
+                                 
+                              ],
+                              "quoteAssets":[
+                                 
+                              ],
+                              "collateralizeNFTAssets":[
+                                 
+                              ],
+                              "side":"",
+                              "siteUrl":"https://bearn.sucks/",
+                              "healthRate":"0",
+                              "name":"styBGT Compounder",
+                              "rewardAssets":[
+                                 
+                              ],
+                              "supplyAssets":[
+                                 
+                              ],
+                              "totalCostBasis":"N/A",
+                              "totalClosedPnl":"N/A",
+                              "totalOpenPnl":"N/A",
+                              "unlockAt":"0",
+                              "vaultAddress":"",
+                              "poolAddress":"0x6fd7f15a0d7babe0a1a752564a591e1cb6117f80",
+                              "value":"0"
+                           }
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0.087497430625311738264529597070328",
+                        "unlockAt":"0"
+                     }
+                  }
+               }
+            }
+         },
+         "berahub":{
+            "name":"BeraHub",
+            "key":"berahub",
+            "value":"0.005665337239089174488",
+            "totalCostBasis":"N/A",
+            "totalClosedPnl":"N/A",
+            "totalOpenPnl":"N/A",
+            "chains":{
+               "berachain":{
+                  "name":"Berachain",
+                  "key":"berachain",
+                  "value":"0.005665337239089174488",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "FARMING":{
+                        "assets":[
+                           
+                        ],
+                        "name":"Farming",
+                        "protocolPositions":[
+                           {
+                              "assets":[
+                                 {
+                                    "balance":"0",
+                                    "chainContract":"berachain:0xac03caba51e17c86c921e1f6cbfbdc91f8bb2e6b",
+                                    "chainKey":"berachain",
+                                    "contract":"0xac03caba51e17c86c921e1f6cbfbdc91f8bb2e6b",
+                                    "decimal":"18",
+                                    "name":"infrared bgt",
+                                    "openPnl":"N/A",
+                                    "price":"1.036798280963869",
+                                    "priceSource":"debank",
+                                    "symbol":"ibgt",
+                                    "totalCostBasis":"N/A",
+                                    "value":"0"
+                                 },
+                                 {
+                                    "balance":"0.01588502198050356",
+                                    "chainContract":"berachain:0x978448a7866aed0146ad5c5e5d3d8424e2b16356",
+                                    "chainKey":"berachain",
+                                    "contract":"0x978448a7866aed0146ad5c5e5d3d8424e2b16356",
+                                    "decimal":"18",
+                                    "name":"oribgt-ot",
+                                    "openPnl":"N/A",
+                                    "price":"0",
+                                    "priceSource":"octav",
+                                    "symbol":"oribgtot",
+                                    "totalCostBasis":"N/A",
+                                    "value":"0"
+                                 }
+                              ],
+                              "borrowAssets":[
+                                 
+                              ],
+                              "dexAssets":[
+                                 
+                              ],
+                              "marginAssets":[
+                                 
+                              ],
+                              "baseAssets":[
+                                 
+                              ],
+                              "quoteAssets":[
+                                 
+                              ],
+                              "collateralizeNFTAssets":[
+                                 
+                              ],
+                              "side":"",
+                              "siteUrl":"https://hub.berachain.com/",
+                              "healthRate":"0",
+                              "name":"ibgt / oribgtot",
+                              "rewardAssets":[
+                                 {
+                                    "balance":"0.005452682617025192",
+                                    "chainContract":"berachain:0x656b95e550c07a9ffe548bd4085c72418ceb1dba",
+                                    "chainKey":"berachain",
+                                    "contract":"0x656b95e550c07a9ffe548bd4085c72418ceb1dba",
+                                    "decimal":"18",
+                                    "name":"bera governance token",
+                                    "openPnl":"N/A",
+                                    "price":"1.039",
+                                    "priceSource":"debank",
+                                    "symbol":"bgt",
+                                    "totalCostBasis":"N/A",
+                                    "value":"0.005665337239089174488"
+                                 }
+                              ],
+                              "supplyAssets":[
+                                 
+                              ],
+                              "totalCostBasis":"N/A",
+                              "totalClosedPnl":"N/A",
+                              "totalOpenPnl":"N/A",
+                              "unlockAt":"0",
+                              "vaultAddress":"",
+                              "poolAddress":"0xeee277a91f9f50cda5d188522c921820a848cd99",
+                              "value":"0.005665337239089174488"
+                           }
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0.005665337239089174488",
+                        "unlockAt":"0"
+                     }
+                  }
+               }
+            }
+         },
+         "berapaw":{
+            "name":"BeraPaw",
+            "key":"berapaw",
+            "value":"0.206260667515895525364766948847039",
+            "totalCostBasis":"N/A",
+            "totalClosedPnl":"N/A",
+            "totalOpenPnl":"N/A",
+            "chains":{
+               "berachain":{
+                  "name":"Berachain",
+                  "key":"berachain",
+                  "value":"0.206260667515895525364766948847039",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "STAKED":{
+                        "assets":[
+                           
+                        ],
+                        "name":"Staked",
+                        "protocolPositions":[
+                           {
+                              "assets":[
+                                 {
+                                    "balance":"0.19945973991701743",
+                                    "chainContract":"berachain:0xbaadcc2962417c01af99fb2b7c75706b9bd6babe",
+                                    "chainKey":"berachain",
+                                    "contract":"0xbaadcc2962417c01af99fb2b7c75706b9bd6babe",
+                                    "decimal":"18",
+                                    "name":"liquid bgt",
+                                    "openPnl":"N/A",
+                                    "price":"1.0340967435418673",
+                                    "priceSource":"debank",
+                                    "symbol":"lbgt",
+                                    "totalCostBasis":"N/A",
+                                    "value":"0.206260667515895525364766948847039"
+                                 }
+                              ],
+                              "borrowAssets":[
+                                 
+                              ],
+                              "dexAssets":[
+                                 
+                              ],
+                              "marginAssets":[
+                                 
+                              ],
+                              "baseAssets":[
+                                 
+                              ],
+                              "quoteAssets":[
+                                 
+                              ],
+                              "collateralizeNFTAssets":[
+                                 
+                              ],
+                              "side":"",
+                              "siteUrl":"https://www.berapaw.com/",
+                              "healthRate":"0",
+                              "name":"stLBGT",
+                              "rewardAssets":[
+                                 
+                              ],
+                              "supplyAssets":[
+                                 
+                              ],
+                              "totalCostBasis":"N/A",
+                              "totalClosedPnl":"N/A",
+                              "totalOpenPnl":"N/A",
+                              "unlockAt":"0",
+                              "vaultAddress":"",
+                              "poolAddress":"0xface73a169e2ca2934036c8af9f464b5de9ef0ca",
+                              "value":"0.206260667515895525364766948847039"
+                           }
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0.206260667515895525364766948847039",
+                        "unlockAt":"0"
+                     }
+                  }
+               }
+            }
+         },
+         "euler2":{
+            "name":"Euler",
+            "key":"euler2",
+            "value":"0.000002764885166875654",
+            "totalCostBasis":"N/A",
+            "totalClosedPnl":"N/A",
+            "totalOpenPnl":"N/A",
+            "chains":{
+               "berachain":{
+                  "name":"Berachain",
+                  "key":"berachain",
+                  "value":"0.000002764885166875654",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "YIELD":{
+                        "assets":[
+                           
+                        ],
+                        "name":"Yield",
+                        "protocolPositions":[
+                           {
+                              "assets":[
+                                 {
+                                    "balance":"0.000002661102181786",
+                                    "chainContract":"berachain:0x6969696969696969696969696969696969696969",
+                                    "chainKey":"berachain",
+                                    "contract":"0x6969696969696969696969696969696969696969",
+                                    "decimal":"18",
+                                    "name":"wrapped bera",
+                                    "openPnl":"N/A",
+                                    "price":"1.039",
+                                    "priceSource":"debank",
+                                    "symbol":"wbera",
+                                    "totalCostBasis":"N/A",
+                                    "value":"0.000002764885166875654"
+                                 }
+                              ],
+                              "borrowAssets":[
+                                 
+                              ],
+                              "dexAssets":[
+                                 
+                              ],
+                              "marginAssets":[
+                                 
+                              ],
+                              "baseAssets":[
+                                 
+                              ],
+                              "quoteAssets":[
+                                 
+                              ],
+                              "collateralizeNFTAssets":[
+                                 
+                              ],
+                              "side":"",
+                              "siteUrl":"https://www.euler.finance/",
+                              "healthRate":"0",
+                              "name":"EVK Vault eWBERA-4",
+                              "rewardAssets":[
+                                 
+                              ],
+                              "supplyAssets":[
+                                 
+                              ],
+                              "totalCostBasis":"N/A",
+                              "totalClosedPnl":"N/A",
+                              "totalOpenPnl":"N/A",
+                              "unlockAt":"0",
+                              "vaultAddress":"",
+                              "poolAddress":"0xcaa70d2aa873ef057980844e18d9a9560bdffcc0",
+                              "value":"0.000002764885166875654"
+                           }
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0.000002764885166875654",
+                        "unlockAt":"0"
+                     }
+                  }
+               }
+            }
+         },
+         "kodiak":{
+            "name":"Kodiak",
+            "key":"kodiak",
+            "value":"0.1185400766977915594385506086696424",
+            "totalCostBasis":"N/A",
+            "totalClosedPnl":"N/A",
+            "totalOpenPnl":"N/A",
+            "chains":{
+               "berachain":{
+                  "name":"Berachain",
+                  "key":"berachain",
+                  "value":"0.1185400766977915594385506086696424",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "LIQUIDITYPOOL":{
+                        "assets":[
+                           
+                        ],
+                        "name":"Liquidity Pool",
+                        "protocolPositions":[
+                           {
+                              "assets":[
+                                 {
+                                    "balance":"0.021465721905558056",
+                                    "chainContract":"berachain:0x2bbc181cdf9917350a91c586260d92240fea05ab",
+                                    "chainKey":"berachain",
+                                    "contract":"0x2bbc181cdf9917350a91c586260d92240fea05ab",
+                                    "decimal":"18",
+                                    "name":"staked lbgt ot",
+                                    "openPnl":"N/A",
+                                    "price":"0",
+                                    "priceSource":"octav",
+                                    "symbol":"stlbgt-ot",
+                                    "totalCostBasis":"N/A",
+                                    "value":"0"
+                                 },
+                                 {
+                                    "balance":"0.016085552133578856",
+                                    "chainContract":"berachain:0xbaadcc2962417c01af99fb2b7c75706b9bd6babe",
+                                    "chainKey":"berachain",
+                                    "contract":"0xbaadcc2962417c01af99fb2b7c75706b9bd6babe",
+                                    "decimal":"18",
+                                    "name":"liquid bgt",
+                                    "openPnl":"N/A",
+                                    "price":"1.0340967435418673",
+                                    "priceSource":"debank",
+                                    "symbol":"lbgt",
+                                    "totalCostBasis":"N/A",
+                                    "value":"0.0166340170794068306268976220378088"
+                                 }
+                              ],
+                              "borrowAssets":[
+                                 
+                              ],
+                              "dexAssets":[
+                                 
+                              ],
+                              "marginAssets":[
+                                 
+                              ],
+                              "baseAssets":[
+                                 
+                              ],
+                              "quoteAssets":[
+                                 
+                              ],
+                              "collateralizeNFTAssets":[
+                                 
+                              ],
+                              "side":"",
+                              "siteUrl":"https://kodiak.finance",
+                              "healthRate":"0",
+                              "name":"stlbgt-ot / lbgt",
+                              "rewardAssets":[
+                                 
+                              ],
+                              "supplyAssets":[
+                                 
+                              ],
+                              "totalCostBasis":"N/A",
+                              "totalClosedPnl":"N/A",
+                              "totalOpenPnl":"N/A",
+                              "unlockAt":"0",
+                              "vaultAddress":"",
+                              "poolAddress":"0x078e5010752b01ccbc8868cf00cd73e8efe29fe5",
+                              "value":"0.0166340170794068306268976220378088"
+                           },
+                           {
+                              "assets":[
+                                 {
+                                    "balance":"0.057631214799002725",
+                                    "chainContract":"berachain:0x7e768f47dfdd5dae874aac233f1bc5817137e453",
+                                    "chainKey":"berachain",
+                                    "contract":"0x7e768f47dfdd5dae874aac233f1bc5817137e453",
+                                    "decimal":"18",
+                                    "name":"bearn bgt",
+                                    "openPnl":"N/A",
+                                    "price":"0",
+                                    "priceSource":"octav",
+                                    "symbol":"ybgt",
+                                    "totalCostBasis":"N/A",
+                                    "value":"0"
+                                 },
+                                 {
+                                    "balance":"0.02505602612471783",
+                                    "chainContract":"berachain:0x9cfbabe5646ac013432809d1ed3e29138fec2457",
+                                    "chainKey":"berachain",
+                                    "contract":"0x9cfbabe5646ac013432809d1ed3e29138fec2457",
+                                    "decimal":"18",
+                                    "name":"ybgt ot",
+                                    "openPnl":"N/A",
+                                    "price":"0",
+                                    "priceSource":"octav",
+                                    "symbol":"ybgt-ot",
+                                    "totalCostBasis":"N/A",
+                                    "value":"0"
+                                 }
+                              ],
+                              "borrowAssets":[
+                                 
+                              ],
+                              "dexAssets":[
+                                 
+                              ],
+                              "marginAssets":[
+                                 
+                              ],
+                              "baseAssets":[
+                                 
+                              ],
+                              "quoteAssets":[
+                                 
+                              ],
+                              "collateralizeNFTAssets":[
+                                 
+                              ],
+                              "side":"",
+                              "siteUrl":"https://kodiak.finance",
+                              "healthRate":"0",
+                              "name":"ybgt / ybgt-ot",
+                              "rewardAssets":[
+                                 
+                              ],
+                              "supplyAssets":[
+                                 
+                              ],
+                              "totalCostBasis":"N/A",
+                              "totalClosedPnl":"N/A",
+                              "totalOpenPnl":"N/A",
+                              "unlockAt":"0",
+                              "vaultAddress":"",
+                              "poolAddress":"0x1cfa34313547e490c73abca033a575f083fc44d1",
+                              "value":"0"
+                           },
+                           {
+                              "assets":[
+                                 {
+                                    "balance":"0.006270140509771258",
+                                    "chainContract":"berachain:0xac03caba51e17c86c921e1f6cbfbdc91f8bb2e6b",
+                                    "chainKey":"berachain",
+                                    "contract":"0xac03caba51e17c86c921e1f6cbfbdc91f8bb2e6b",
+                                    "decimal":"18",
+                                    "name":"infrared bgt",
+                                    "openPnl":"N/A",
+                                    "price":"1.036798280963869",
+                                    "priceSource":"debank",
+                                    "symbol":"ibgt",
+                                    "totalCostBasis":"N/A",
+                                    "value":"0.006500870901932757550848952677202"
+                                 },
+                                 {
+                                    "balance":"0.004868560272713456",
+                                    "chainContract":"berachain:0xe8cd4e99967c7121f8f733d8bf38916d725ddcba",
+                                    "chainKey":"berachain",
+                                    "contract":"0xe8cd4e99967c7121f8f733d8bf38916d725ddcba",
+                                    "decimal":"18",
+                                    "name":"oribgt-ot",
+                                    "openPnl":"N/A",
+                                    "price":"0",
+                                    "priceSource":"octav",
+                                    "symbol":"oribgtot",
+                                    "totalCostBasis":"N/A",
+                                    "value":"0"
+                                 }
+                              ],
+                              "borrowAssets":[
+                                 
+                              ],
+                              "dexAssets":[
+                                 
+                              ],
+                              "marginAssets":[
+                                 
+                              ],
+                              "baseAssets":[
+                                 
+                              ],
+                              "quoteAssets":[
+                                 
+                              ],
+                              "collateralizeNFTAssets":[
+                                 
+                              ],
+                              "side":"",
+                              "siteUrl":"https://kodiak.finance",
+                              "healthRate":"0",
+                              "name":"ibgt / oribgtot",
+                              "rewardAssets":[
+                                 
+                              ],
+                              "supplyAssets":[
+                                 
+                              ],
+                              "totalCostBasis":"N/A",
+                              "totalClosedPnl":"N/A",
+                              "totalOpenPnl":"N/A",
+                              "unlockAt":"0",
+                              "vaultAddress":"",
+                              "poolAddress":"0x4d7e4aa9d7ad8d77c87a86b102b7b4490c9e42d7",
+                              "value":"0.006500870901932757550848952677202"
+                           },
+                           {
+                              "assets":[
+                                 {
+                                    "balance":"0.005974222340964094",
+                                    "chainContract":"berachain:0x6969696969696969696969696969696969696969",
+                                    "chainKey":"berachain",
+                                    "contract":"0x6969696969696969696969696969696969696969",
+                                    "decimal":"18",
+                                    "name":"wrapped bera",
+                                    "openPnl":"N/A",
+                                    "price":"1.039",
+                                    "priceSource":"debank",
+                                    "symbol":"wbera",
+                                    "totalCostBasis":"N/A",
+                                    "value":"0.006207217012261693666"
+                                 },
+                                 {
+                                    "balance":"0.047684600670015426",
+                                    "chainContract":"berachain:0xac03caba51e17c86c921e1f6cbfbdc91f8bb2e6b",
+                                    "chainKey":"berachain",
+                                    "contract":"0xac03caba51e17c86c921e1f6cbfbdc91f8bb2e6b",
+                                    "decimal":"18",
+                                    "name":"infrared bgt",
+                                    "openPnl":"N/A",
+                                    "price":"1.036798280963869",
+                                    "priceSource":"debank",
+                                    "symbol":"ibgt",
+                                    "totalCostBasis":"N/A",
+                                    "value":"0.049439312003120549613474378643194"
+                                 }
+                              ],
+                              "borrowAssets":[
+                                 
+                              ],
+                              "dexAssets":[
+                                 
+                              ],
+                              "marginAssets":[
+                                 
+                              ],
+                              "baseAssets":[
+                                 
+                              ],
+                              "quoteAssets":[
+                                 
+                              ],
+                              "collateralizeNFTAssets":[
+                                 
+                              ],
+                              "side":"",
+                              "siteUrl":"https://kodiak.finance",
+                              "healthRate":"0",
+                              "name":"wbera / ibgt",
+                              "rewardAssets":[
+                                 
+                              ],
+                              "supplyAssets":[
+                                 
+                              ],
+                              "totalCostBasis":"N/A",
+                              "totalClosedPnl":"N/A",
+                              "totalOpenPnl":"N/A",
+                              "unlockAt":"0",
+                              "vaultAddress":"",
+                              "poolAddress":"0x564f011d557aad1ca09bfc956eb8a17c35d490e0",
+                              "value":"0.055646529015382243279474378643194"
+                           },
+                           {
+                              "assets":[
+                                 {
+                                    "balance":"0.001600313727533991",
+                                    "chainContract":"berachain:0x9b6761bf2397bb5a6624a856cc84a3a14dcd3fe5",
+                                    "chainKey":"berachain",
+                                    "contract":"0x9b6761bf2397bb5a6624a856cc84a3a14dcd3fe5",
+                                    "decimal":"18",
+                                    "name":"infrared bera",
+                                    "openPnl":"N/A",
+                                    "price":"1.067723990005348",
+                                    "priceSource":"debank",
+                                    "symbol":"ibera",
+                                    "totalCostBasis":"N/A",
+                                    "value":"0.001708693358422924208958941783868"
+                                 },
+                                 {
+                                    "balance":"0.037341878931950734",
+                                    "chainContract":"berachain:0xd2c41bf4033a83c0fc3a7f58a392bf37d6dcdb58",
+                                    "chainKey":"berachain",
+                                    "contract":"0xd2c41bf4033a83c0fc3a7f58a392bf37d6dcdb58",
+                                    "decimal":"18",
+                                    "name":"openstate bgt",
+                                    "openPnl":"N/A",
+                                    "price":"1.0189622866055144",
+                                    "priceSource":"debank",
+                                    "symbol":"osbgt",
+                                    "totalCostBasis":"N/A",
+                                    "value":"0.0380499663426468037723707135275696"
+                                 }
+                              ],
+                              "borrowAssets":[
+                                 
+                              ],
+                              "dexAssets":[
+                                 
+                              ],
+                              "marginAssets":[
+                                 
+                              ],
+                              "baseAssets":[
+                                 
+                              ],
+                              "quoteAssets":[
+                                 
+                              ],
+                              "collateralizeNFTAssets":[
+                                 
+                              ],
+                              "side":"",
+                              "siteUrl":"https://kodiak.finance",
+                              "healthRate":"0",
+                              "name":"ibera / osbgt",
+                              "rewardAssets":[
+                                 
+                              ],
+                              "supplyAssets":[
+                                 
+                              ],
+                              "totalCostBasis":"N/A",
+                              "totalClosedPnl":"N/A",
+                              "totalOpenPnl":"N/A",
+                              "unlockAt":"0",
+                              "vaultAddress":"",
+                              "poolAddress":"0xad445256ff81171043a5e7cd8831e4371b000176",
+                              "value":"0.0397586597010697279813296553114376"
+                           }
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0.1185400766977915594385506086696424",
+                        "unlockAt":"0"
+                     }
+                  }
+               }
+            }
+         },
+         "origami":{
+            "name":"Origami Finance",
+            "key":"origami",
+            "value":"0.170323279944234750700176184519517",
+            "totalCostBasis":"N/A",
+            "totalClosedPnl":"N/A",
+            "totalOpenPnl":"N/A",
+            "chains":{
+               "berachain":{
+                  "name":"Berachain",
+                  "key":"berachain",
+                  "value":"0.170323279944234750700176184519517",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "YIELD":{
+                        "assets":[
+                           
+                        ],
+                        "name":"Yield",
+                        "protocolPositions":[
+                           {
+                              "assets":[
+                                 {
+                                    "balance":"0.0021391409109911713",
+                                    "chainContract":"berachain:0x6969696969696969696969696969696969696969",
+                                    "chainKey":"berachain",
+                                    "contract":"0x6969696969696969696969696969696969696969",
+                                    "decimal":"18",
+                                    "name":"wrapped bera",
+                                    "openPnl":"N/A",
+                                    "price":"1.039",
+                                    "priceSource":"debank",
+                                    "symbol":"wbera",
+                                    "totalCostBasis":"N/A",
+                                    "value":"0.0022225674065198269807"
+                                 },
+                                 {
+                                    "balance":"0.017074034794132893",
+                                    "chainContract":"berachain:0xac03caba51e17c86c921e1f6cbfbdc91f8bb2e6b",
+                                    "chainKey":"berachain",
+                                    "contract":"0xac03caba51e17c86c921e1f6cbfbdc91f8bb2e6b",
+                                    "decimal":"18",
+                                    "name":"infrared bgt",
+                                    "openPnl":"N/A",
+                                    "price":"1.036798280963869",
+                                    "priceSource":"debank",
+                                    "symbol":"ibgt",
+                                    "totalCostBasis":"N/A",
+                                    "value":"0.017702329923674270396810117443017"
+                                 }
+                              ],
+                              "borrowAssets":[
+                                 
+                              ],
+                              "dexAssets":[
+                                 
+                              ],
+                              "marginAssets":[
+                                 
+                              ],
+                              "baseAssets":[
+                                 
+                              ],
+                              "quoteAssets":[
+                                 
+                              ],
+                              "collateralizeNFTAssets":[
+                                 
+                              ],
+                              "side":"",
+                              "siteUrl":"https://origami.finance",
+                              "healthRate":"0",
+                              "name":"Origami WBERA-iBGT LP Auto-Compounder (Kodiak)",
+                              "rewardAssets":[
+                                 
+                              ],
+                              "supplyAssets":[
+                                 
+                              ],
+                              "totalCostBasis":"N/A",
+                              "totalClosedPnl":"N/A",
+                              "totalOpenPnl":"N/A",
+                              "unlockAt":"0",
+                              "vaultAddress":"",
+                              "poolAddress":"0x32bc5e87297e148f70867005ffdc91a9022fc1f6",
+                              "value":"0.019924897330194097377510117443017"
+                           },
+                           {
+                              "assets":[
+                                 {
+                                    "balance":"0.1450604089295185",
+                                    "chainContract":"berachain:0xac03caba51e17c86c921e1f6cbfbdc91f8bb2e6b",
+                                    "chainKey":"berachain",
+                                    "contract":"0xac03caba51e17c86c921e1f6cbfbdc91f8bb2e6b",
+                                    "decimal":"18",
+                                    "name":"infrared bgt",
+                                    "openPnl":"N/A",
+                                    "price":"1.036798280963869",
+                                    "priceSource":"debank",
+                                    "symbol":"ibgt",
+                                    "totalCostBasis":"N/A",
+                                    "value":"0.1503983826140406533226660670765"
+                                 }
+                              ],
+                              "borrowAssets":[
+                                 
+                              ],
+                              "dexAssets":[
+                                 
+                              ],
+                              "marginAssets":[
+                                 
+                              ],
+                              "baseAssets":[
+                                 
+                              ],
+                              "quoteAssets":[
+                                 
+                              ],
+                              "collateralizeNFTAssets":[
+                                 
+                              ],
+                              "side":"",
+                              "siteUrl":"https://origami.finance",
+                              "healthRate":"0",
+                              "name":"Origami iBGT Auto-Compounder",
+                              "rewardAssets":[
+                                 
+                              ],
+                              "supplyAssets":[
+                                 
+                              ],
+                              "totalCostBasis":"N/A",
+                              "totalClosedPnl":"N/A",
+                              "totalOpenPnl":"N/A",
+                              "unlockAt":"0",
+                              "vaultAddress":"",
+                              "poolAddress":"0x69f1e971257419b1e9c405a553f252c64a29a30a",
+                              "value":"0.1503983826140406533226660670765"
+                           }
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0.170323279944234750700176184519517",
+                        "unlockAt":"0"
+                     }
+                  }
+               }
+            }
+         },
+         "steer":{
+            "name":"Steer Protocol",
+            "key":"steer",
+            "value":"0",
+            "totalCostBasis":"N/A",
+            "totalClosedPnl":"N/A",
+            "totalOpenPnl":"N/A",
+            "chains":{
+               "berachain":{
+                  "name":"Berachain",
+                  "key":"berachain",
+                  "value":"0",
+                  "totalCostBasis":"N/A",
+                  "totalClosedPnl":"N/A",
+                  "totalOpenPnl":"N/A",
+                  "protocolPositions":{
+                     "YIELD":{
+                        "assets":[
+                           
+                        ],
+                        "name":"Yield",
+                        "protocolPositions":[
+                           {
+                              "assets":[
+                                 {
+                                    "balance":"0.07304529541811204",
+                                    "chainContract":"berachain:0x978448a7866aed0146ad5c5e5d3d8424e2b16356",
+                                    "chainKey":"berachain",
+                                    "contract":"0x978448a7866aed0146ad5c5e5d3d8424e2b16356",
+                                    "decimal":"18",
+                                    "name":"oribgt-ot",
+                                    "openPnl":"N/A",
+                                    "price":"0",
+                                    "priceSource":"octav",
+                                    "symbol":"oribgtot",
+                                    "totalCostBasis":"N/A",
+                                    "value":"0"
+                                 }
+                              ],
+                              "borrowAssets":[
+                                 
+                              ],
+                              "dexAssets":[
+                                 
+                              ],
+                              "marginAssets":[
+                                 
+                              ],
+                              "baseAssets":[
+                                 
+                              ],
+                              "quoteAssets":[
+                                 
+                              ],
+                              "collateralizeNFTAssets":[
+                                 
+                              ],
+                              "side":"",
+                              "siteUrl":"https://app.steer.finance",
+                              "healthRate":"0",
+                              "name":"STEERUV20",
+                              "rewardAssets":[
+                                 
+                              ],
+                              "supplyAssets":[
+                                 
+                              ],
+                              "totalCostBasis":"N/A",
+                              "totalClosedPnl":"N/A",
+                              "totalOpenPnl":"N/A",
+                              "unlockAt":"0",
+                              "vaultAddress":"",
+                              "poolAddress":"0xdb78b4166580917c9604f8ddfbea5f49b493845c",
+                              "value":"0"
+                           }
+                        ],
+                        "totalOpenPnl":"N/A",
+                        "totalCostBasis":"N/A",
+                        "totalValue":"0",
+                        "unlockAt":"0"
+                     }
+                  }
+               }
+            }
+         }
+      },
+      "chains":{
+         "berachain":{
+            "name":"Berachain",
+            "key":"berachain",
+            "chainId":"80084",
+            "value":"12.82194535852729301420225029476284621942392230988004",
+            "valuePercentile":"55.578467905467879688881159368968918410508633641184",
+            "totalCostBasis":"N/A",
+            "totalClosedPnl":"N/A",
+            "totalOpenPnl":"N/A"
+         },
+         "ethereum":{
+            "name":"Ethereum",
+            "key":"ethereum",
+            "chainId":"1",
+            "value":"10.2480417097305815017476",
+            "valuePercentile":"44.421532094532120311118840631031081589491366358816",
+            "totalCostBasis":"N/A",
+            "totalClosedPnl":"N/A",
+            "totalOpenPnl":"N/A"
+         }
+      }
+   }
+]
