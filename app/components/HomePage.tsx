@@ -4,6 +4,9 @@ import { useState, useEffect } from 'react';
 import { useAccount } from 'wagmi';
 import { ConnectButton } from '@rainbow-me/rainbowkit';
 import { AavePositionCard } from './AavePositionCard';
+import { HealthFactorBar } from './HealthFactorBar';
+import { MarketParameters } from './MarketParameters';
+import { TopUpButton } from './TopUpButton';
 
 export function HomePage() {
 
@@ -63,6 +66,23 @@ export function HomePage() {
     const borrowAssets = lendingPosition?.borrowAssets || [];
     const hasAavePositions = supplyAssets.length > 0 || borrowAssets.length > 0;
 
+    // ETH market parameters for Aave V3
+    const marketParams = {
+        maxLTV: 80.5,
+        liquidationThreshold: 83
+    };
+
+    // Calculate health factor
+    // collateral_value = sum of (supplied * price) = sum of values
+    const collateralValue = supplyAssets.reduce((sum: number, asset: any) => sum + asset.value, 0);
+    // debt_value = sum of (borrowed * price) = sum of values
+    const debtValue = borrowAssets.reduce((sum: number, asset: any) => sum + asset.value, 0);
+    // HF = (collateral_value * liquidation_threshold) / debt_value
+    const liquidationThresholdDecimal = marketParams.liquidationThreshold / 100; // Convert 83% to 0.83
+    const healthFactor = debtValue > 0
+        ? (collateralValue * liquidationThresholdDecimal) / debtValue
+        : 0;
+
     return (
         <div className="flex flex-col items-center min-h-screen bg-white p-8">
             <h1 className="text-7xl text-red-600 mb-8">
@@ -95,15 +115,30 @@ export function HomePage() {
                 {isConnected && data && (
                     <div>
                         <h2 className="text-3xl font-bold mb-6 text-gray-800">AAVE Positions</h2>
+
                         {hasAavePositions ? (
-                            <div className="grid gap-6 md:grid-cols-2">
-                                {supplyAssets.length > 0 && (
-                                    <AavePositionCard assets={supplyAssets} type="supply" />
+                            <>
+                                {/* Market Parameters */}
+                                <MarketParameters {...marketParams} />
+
+                                {/* Health Factor - only show if user has borrows */}
+                                {borrowAssets.length > 0 && healthFactor > 0 && (
+                                    <HealthFactorBar healthFactor={healthFactor} />
                                 )}
-                                {borrowAssets.length > 0 && (
-                                    <AavePositionCard assets={borrowAssets} type="borrow" />
-                                )}
-                            </div>
+
+                                {/* Top Up Button */}
+                                <TopUpButton />
+
+                                {/* Position Cards */}
+                                <div className="grid gap-6 md:grid-cols-2">
+                                    {supplyAssets.length > 0 && (
+                                        <AavePositionCard assets={supplyAssets} type="supply" />
+                                    )}
+                                    {borrowAssets.length > 0 && (
+                                        <AavePositionCard assets={borrowAssets} type="borrow" />
+                                    )}
+                                </div>
+                            </>
                         ) : (
                             <div className="bg-gray-100 p-8 rounded-lg text-center text-gray-600">
                                 No AAVE positions found for this wallet
