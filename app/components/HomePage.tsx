@@ -5,6 +5,7 @@ import { useAccount } from 'wagmi';
 import { ConnectButton } from '@rainbow-me/rainbowkit';
 import { MarketParameters } from './MarketParameters';
 import { LoanManagement } from './LoanManagement';
+import { parseEther } from "viem"
 
 export function HomePage() {
 
@@ -12,6 +13,7 @@ export function HomePage() {
     const [data, setData] = useState<any>(null);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState<string | null>(null);
+    const [txDone, setTxDone] = useState<boolean>(false)
 
     const fetchWalletData = async (walletAddress: string) => {
         setLoading(true);
@@ -92,7 +94,8 @@ export function HomePage() {
     const handleSupplyUpdate = (ethAmount: number, ethPrice: number) => {
         const updatedAssets = displayedSupplyAssets.map((asset: any) => {
             if (asset.symbol.toLowerCase() === 'weth' || asset.symbol.toLowerCase() === 'eth') {
-                const ethValue = ethAmount * ethPrice;
+                const ethValue = ethAmount * parseFloat(ethPrice.toString());
+
                 return {
                     ...asset,
                     value: parseFloat(asset.value) + ethValue
@@ -100,6 +103,7 @@ export function HomePage() {
             }
             return asset;
         });
+        setTxDone(true)
         setDisplayedSupplyAssets(updatedAssets);
     };
 
@@ -141,6 +145,7 @@ export function HomePage() {
                                     {...marketParams}
                                     supplyAssets={displayedSupplyAssets}
                                     borrowAssets={borrowAssets}
+                                    txDone={txDone}
                                 />
 
                                 {/* Unified Loan Management - only show if user has borrows */}

@@ -15,13 +15,15 @@ interface MarketParametersProps {
 	liquidationThreshold?: number;
 	supplyAssets?: Asset[];
 	borrowAssets?: Asset[];
+    txDone: boolean;
 }
 
 export function MarketParameters({
 	maxLTV = 80.5,
 	liquidationThreshold = 83,
 	supplyAssets = [],
-	borrowAssets = []
+	borrowAssets = [],
+    txDone
 }: MarketParametersProps) {
 
     const formatEthNum = (num: number) => {
@@ -57,7 +59,7 @@ export function MarketParameters({
 				<div className="bg-white rounded-lg p-4 border-2 border-red-100 shadow-sm">
 					<div className="text-sm text-gray-600 mb-1">Total Supplied</div>
 					<div className="text-2xl font-bold text-green-600 mb-2">
-						${formatEthNum(totalSupplied)}
+						${txDone ? formatNumber(totalSupplied) : formatEthNum(totalSupplied)}
 					</div>
 					<div className="space-y-1">
 						{supplyAssets.length > 0 ? (
