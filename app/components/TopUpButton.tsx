@@ -68,16 +68,16 @@ export function TopUpButton() {
 			{!isOpen ? (
 				<button
 					onClick={() => setIsOpen(true)}
-					className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-6 rounded-lg shadow-lg transition-colors"
+					className="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-6 rounded-lg shadow-lg transition-colors"
 				>
 					Top Up ETH Supply
 				</button>
 			) : (
-				<div className="bg-white border border-blue-200 rounded-lg p-6 shadow-md">
-					<h3 className="text-xl font-bold text-gray-800 mb-4">Supply ETH to Aave</h3>
+				<div className="bg-gradient-to-br from-red-50 to-rose-50 border-2 border-red-200 rounded-lg p-6 shadow-md">
+					<h3 className="text-xl font-bold text-red-900 mb-4">Supply ETH to Aave</h3>
 
 					<div className="mb-4">
-						<label className="block text-sm font-medium text-gray-700 mb-2">
+						<label className="block text-sm font-semibold text-red-900 mb-2">
 							Amount (ETH)
 						</label>
 						<input
@@ -87,18 +87,18 @@ export function TopUpButton() {
 							value={amount}
 							onChange={(e) => setAmount(e.target.value)}
 							placeholder="0.0"
-							className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+							className="w-full px-4 py-2 border-2 border-red-200 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 bg-white"
 						/>
 					</div>
 
 					{error && (
-						<div className="mb-4 p-3 bg-red-100 text-red-700 rounded-lg text-sm">
+						<div className="mb-4 p-3 bg-red-100 border border-red-300 text-red-700 rounded-lg text-sm font-medium">
 							Error: {error.message}
 						</div>
 					)}
 
 					{isSuccess && (
-						<div className="mb-4 p-3 bg-green-100 text-green-700 rounded-lg text-sm">
+						<div className="mb-4 p-3 bg-green-100 border border-green-300 text-green-700 rounded-lg text-sm font-medium">
 							Success! Transaction confirmed.
 						</div>
 					)}
@@ -107,7 +107,7 @@ export function TopUpButton() {
 						<button
 							onClick={handleTopUp}
 							disabled={isPending || isConfirming}
-							className="flex-1 bg-green-600 hover:bg-green-700 disabled:bg-gray-400 text-white font-bold py-3 px-6 rounded-lg transition-colors"
+							className="flex-1 bg-red-600 hover:bg-red-700 disabled:bg-gray-400 text-white font-bold py-3 px-6 rounded-lg transition-colors shadow-sm"
 						>
 							{isPending || isConfirming ? 'Confirming...' : 'Supply'}
 						</button>
@@ -117,7 +117,7 @@ export function TopUpButton() {
 								setAmount('');
 							}}
 							disabled={isPending || isConfirming}
-							className="flex-1 bg-gray-300 hover:bg-gray-400 disabled:bg-gray-200 text-gray-800 font-bold py-3 px-6 rounded-lg transition-colors"
+							className="flex-1 bg-white hover:bg-red-50 disabled:bg-gray-200 text-red-900 border-2 border-red-300 font-bold py-3 px-6 rounded-lg transition-colors"
 						>
 							Cancel
 						</button>

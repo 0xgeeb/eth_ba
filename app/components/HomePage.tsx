@@ -3,10 +3,8 @@
 import { useState, useEffect } from 'react';
 import { useAccount } from 'wagmi';
 import { ConnectButton } from '@rainbow-me/rainbowkit';
-import { AavePositionCard } from './AavePositionCard';
-import { HealthFactorBar } from './HealthFactorBar';
 import { MarketParameters } from './MarketParameters';
-import { TopUpButton } from './TopUpButton';
+import { LoanManagement } from './LoanManagement';
 
 export function HomePage() {
 
@@ -114,30 +112,31 @@ export function HomePage() {
 
                 {isConnected && data && (
                     <div>
-                        <h2 className="text-3xl font-bold mb-6 text-gray-800">AAVE Positions</h2>
-
                         {hasAavePositions ? (
                             <>
-                                {/* Market Parameters */}
-                                <MarketParameters {...marketParams} />
+                                {/* Market Parameters with Supply/Borrow */}
+                                <MarketParameters
+                                    {...marketParams}
+                                    supplyAssets={supplyAssets}
+                                    borrowAssets={borrowAssets}
+                                />
 
-                                {/* Health Factor - only show if user has borrows */}
-                                {borrowAssets.length > 0 && healthFactor > 0 && (
-                                    <HealthFactorBar healthFactor={healthFactor} />
+                                {/* Unified Loan Management - only show if user has borrows */}
+                                {borrowAssets.length > 0 && debtValue > 0 && (
+                                    <LoanManagement
+                                        currentCollateralValue={collateralValue}
+                                        currentDebtValue={debtValue}
+                                        currentHealthFactor={healthFactor}
+                                        liquidationThreshold={marketParams.liquidationThreshold}
+                                        supplyAssets={supplyAssets}
+                                        borrowAssets={borrowAssets}
+                                        onTransactionSuccess={() => {
+                                            if (address) {
+                                                fetchWalletData(address);
+                                            }
+                                        }}
+                                    />
                                 )}
-
-                                {/* Top Up Button */}
-                                <TopUpButton />
-
-                                {/* Position Cards */}
-                                <div className="grid gap-6 md:grid-cols-2">
-                                    {supplyAssets.length > 0 && (
-                                        <AavePositionCard assets={supplyAssets} type="supply" />
-                                    )}
-                                    {borrowAssets.length > 0 && (
-                                        <AavePositionCard assets={borrowAssets} type="borrow" />
-                                    )}
-                                </div>
                             </>
                         ) : (
                             <div className="bg-gray-100 p-8 rounded-lg text-center text-gray-600">

@@ -41,9 +41,9 @@ export function HealthFactorBar({ healthFactor }: HealthFactorBarProps) {
 	const position = getBarPosition();
 
 	return (
-		<div className="bg-white border border-gray-200 rounded-lg p-6 shadow-md mb-6">
+		<div className="bg-gradient-to-br from-red-50 to-rose-50 border-2 border-red-200 rounded-lg p-6 shadow-md mb-6">
 			<div className="flex justify-between items-center mb-3">
-				<h3 className="text-xl font-bold text-gray-800">Loan Health</h3>
+				<h3 className="text-xl font-bold text-red-900">Loan Health</h3>
 				<div className="text-right">
 					<div className={`text-2xl font-bold ${getHealthTextColor()}`}>
 						{healthFactor.toFixed(2)}
@@ -54,24 +54,24 @@ export function HealthFactorBar({ healthFactor }: HealthFactorBarProps) {
 				</div>
 			</div>
 
-			<div className="relative w-full h-6 rounded-full overflow-hidden bg-gradient-to-r from-red-500 via-yellow-500 to-green-500">
+			<div className="relative w-full h-6 rounded-full overflow-hidden bg-gradient-to-r from-red-500 via-yellow-500 to-green-500 shadow-inner">
 				{/* Sliding indicator */}
 				<div
 					className="absolute top-0 h-full w-1 bg-white shadow-lg transition-all duration-500"
 					style={{ left: `${position}%` }}
 				>
-					<div className="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded whitespace-nowrap">
+					<div className="absolute -top-8 left-1/2 -translate-x-1/2 bg-red-900 text-white text-xs px-2 py-1 rounded whitespace-nowrap font-bold">
 						{healthFactor.toFixed(2)}
 					</div>
 				</div>
 			</div>
 
-			<div className="mt-3 flex justify-between text-xs text-gray-600">
+			<div className="mt-3 flex justify-between text-xs text-red-900 font-semibold">
 				<span>Liquidation (&lt;1.0)</span>
 				<span>Safe (&gt;2.0)</span>
 			</div>
 
-			<div className="mt-3 text-sm text-gray-600">
+			<div className="mt-3 text-sm text-red-800 font-medium">
 				<p>Health factor below 1.0 may result in liquidation</p>
 			</div>
 		</div>
