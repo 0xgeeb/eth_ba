@@ -1,41 +1,61 @@
 "use client"
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useAccount } from 'wagmi';
+import { ConnectButton } from '@rainbow-me/rainbowkit';
 import { AavePositionCard } from './AavePositionCard';
 
 export function HomePage() {
 
-    const [address, setAddress] = useState('');
+    const { address, isConnected } = useAccount();
     const [data, setData] = useState<any>(null);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState<string | null>(null);
 
-    const fetchWalletData = async () => {
-        if (!address) return;
-
+    const fetchWalletData = async (walletAddress: string) => {
         setLoading(true);
         setError(null);
 
         try {
-            const response = await fetch(`/api/wallet?address=${encodeURIComponent(address)}`);
-            const result = await response.json();
-
-            console.log('API Response:', result);
+            const response = await fetch(`/api/wallet?address=${encodeURIComponent(walletAddress)}`);
 
             if (!response.ok) {
-                setError(result.error || 'Failed to fetch data');
+                let errorMessage = 'Failed to fetch data';
+                try {
+                    const result = await response.json();
+                    errorMessage = result.error || errorMessage;
+                    if (result.details) {
+                        console.error('API Error Details:', result.details);
+                    }
+                } catch (jsonError) {
+                    console.error('Failed to parse error response:', jsonError);
+                }
+                setError(errorMessage);
                 setData(null);
             } else {
+                const result = await response.json();
+                console.log('API Response:', result);
                 setData(result);
                 setError(null);
             }
         } catch (err) {
-            setError('Failed to fetch wallet data');
+            console.error('Fetch error:', err);
+            const errorMessage = err instanceof Error ? err.message : 'Network error - failed to fetch wallet data';
+            setError(errorMessage);
             setData(null);
         } finally {
             setLoading(false);
         }
     };
+
+    useEffect(() => {
+        if (isConnected && address) {
+            fetchWalletData(address);
+        } else {
+            setData(null);
+            setError(null);
+        }
+    }, [address, isConnected]);
 
     const wallet = Array.isArray(data) ? data[0] : null;
     const lendingPosition = wallet?.assetByProtocols?.aave3?.chains?.ethereum?.protocolPositions?.LENDING?.protocolPositions?.[0];
@@ -50,22 +70,15 @@ export function HomePage() {
             </h1>
 
             <div className="w-full max-w-4xl">
-                <div className="flex gap-2 mb-8">
-                    <input
-                        type="text"
-                        value={address}
-                        onChange={(e) => setAddress(e.target.value)}
-                        placeholder="Enter wallet address"
-                        className="flex-1 px-4 py-2 border border-gray-300 rounded"
-                    />
-                    <button
-                        onClick={fetchWalletData}
-                        disabled={loading || !address}
-                        className="px-6 py-2 bg-red-600 text-white rounded disabled:bg-gray-400"
-                    >
-                        {loading ? 'Loading...' : 'Fetch'}
-                    </button>
+                <div className="flex justify-center mb-8">
+                    <ConnectButton />
                 </div>
+
+                {loading && (
+                    <div className="text-center text-gray-600 mb-4">
+                        Loading wallet data...
+                    </div>
+                )}
 
                 {error && (
                     <div className="p-4 mb-4 bg-red-100 text-red-700 rounded">
@@ -73,7 +86,13 @@ export function HomePage() {
                     </div>
                 )}
 
-                {data && (
+                {!isConnected && !loading && (
+                    <div className="bg-gray-100 p-8 rounded-lg text-center text-gray-600">
+                        Connect your wallet to view your AAVE positions
+                    </div>
+                )}
+
+                {isConnected && data && (
                     <div>
                         <h2 className="text-3xl font-bold mb-6 text-gray-800">AAVE Positions</h2>
                         {hasAavePositions ? (

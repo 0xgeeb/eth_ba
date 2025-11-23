@@ -1,3 +1,7 @@
+"use client";
+
+import { formatEther } from "viem"
+
 interface Asset {
   symbol: string;
   name: string;
@@ -22,13 +26,17 @@ export function AavePositionCard({ assets, type }: AavePositionCardProps) {
 
   const totalValue = assets.reduce((sum, asset) => sum + asset.value, 0);
 
+  const formatNum = (stringedNum: string) => {
+    return parseFloat(formatEther(stringedNum as unknown as bigint)).toFixed(2)
+  }
+
   return (
     <div className={`${bgColor} border ${borderColor} rounded-lg p-6 shadow-md`}>
       <div className="flex justify-between items-center mb-4">
         <h3 className={`text-2xl font-bold ${textColor}`}>{title}</h3>
         <div className="text-right">
           <div className="text-sm text-gray-600">Total Value</div>
-          <div className="text-2xl font-bold">${totalValue.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</div>
+          <div className="text-2xl font-bold">${formatNum(totalValue.toString())}</div>
         </div>
       </div>
 
