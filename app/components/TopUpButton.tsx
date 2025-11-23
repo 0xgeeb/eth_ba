@@ -1,35 +1,33 @@
 "use client";
 
 import { useState } from 'react';
-import { useWriteContract, useWaitForTransactionReceipt } from 'wagmi';
+import { useAccount, useWriteContract, useWaitForTransactionReceipt } from 'wagmi';
+import { mainnet } from 'wagmi/chains';
 import { parseEther } from 'viem';
 
-// Aave V3 Pool contract on Ethereum mainnet
-const AAVE_POOL_ADDRESS = '0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2';
+const AAVE_ETH_STAKING_CONTRACT = '0xd01607c3C5eCABa394D8be377a08590149325722';
+const AAVE_ETH_POOL = '0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2'
 
-const POOL_ABI = [
+const STAKING_ABI = [
 	{
 		inputs: [
-			{ name: 'asset', type: 'address' },
-			{ name: 'amount', type: 'uint256' },
+			{ name: '', type: 'address' },
 			{ name: 'onBehalfOf', type: 'address' },
 			{ name: 'referralCode', type: 'uint16' }
 		],
-		name: 'supply',
+		name: 'depositETH',
 		outputs: [],
-		stateMutability: 'nonpayable',
+		stateMutability: 'payable',
 		type: 'function'
 	}
 ] as const;
-
-// WETH address on Ethereum mainnet
-const WETH_ADDRESS = '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2';
 
 export function TopUpButton() {
 	const [amount, setAmount] = useState('');
 	const [isOpen, setIsOpen] = useState(false);
 
 	const { data: hash, writeContract, isPending, error } = useWriteContract();
+    const { address } = useAccount()
 
 	const { isLoading: isConfirming, isSuccess } = useWaitForTransactionReceipt({
 		hash,
@@ -41,19 +39,25 @@ export function TopUpButton() {
 			return;
 		}
 
+		if (!address) {
+			alert('Please connect your wallet');
+			return;
+		}
+
 		try {
 			writeContract({
-				address: AAVE_POOL_ADDRESS,
-				abi: POOL_ABI,
-				functionName: 'supply',
-				args: [
-					WETH_ADDRESS,
-					parseEther(amount),
-					'0x0000000000000000000000000000000000000000', // Will be replaced by connected address
-					0
-				],
-				value: parseEther(amount), // Send ETH
-			});
+                address: AAVE_ETH_STAKING_CONTRACT,
+                abi: STAKING_ABI,
+                functionName: 'depositETH',
+                args: [
+                    AAVE_ETH_POOL as `0x${string}`,
+                    address as `0x${string}`,
+                    0
+                ],
+                value: parseEther(amount),
+                account: address,
+                chain: mainnet
+            });
 		} catch (err) {
 			console.error('Error topping up:', err);
 		}
