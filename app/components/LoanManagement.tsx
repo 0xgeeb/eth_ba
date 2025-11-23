@@ -36,7 +36,7 @@ interface LoanManagementProps {
     liquidationThreshold: number;
     supplyAssets?: Asset[];
     borrowAssets?: Asset[];
-    onTransactionSuccess?: () => void;
+    onSupplyUpdate?: (ethAmount: number, ethPrice: number) => void;
 }
 
 export function LoanManagement({
@@ -46,12 +46,20 @@ export function LoanManagement({
     liquidationThreshold,
     supplyAssets = [],
     borrowAssets = [],
-    onTransactionSuccess
+    onSupplyUpdate
 }: LoanManagementProps) {
     const [ethAmount, setEthAmount] = useState('');
     const [priceChange, setPriceChange] = useState(0);
+    const [displayedHealthFactor, setDisplayedHealthFactor] = useState(currentHealthFactor);
+    const [displayedCollateral, setDisplayedCollateral] = useState(currentCollateralValue);
+    const [pendingTxValues, setPendingTxValues] = useState<{ethAmount: number, ethPrice: number, priceChange: number} | null>(null);
 
-    
+    // Update displayed values when props change
+    useEffect(() => {
+        setDisplayedHealthFactor(currentHealthFactor);
+        setDisplayedCollateral(currentCollateralValue);
+    }, [currentHealthFactor, currentCollateralValue]);
+
     // Extract ETH price from assets
     const getEthPrice = () => {
         // Look for WETH in supply or borrow assets
@@ -72,22 +80,34 @@ export function LoanManagement({
         address: address,
     });
     
-    // Handle transaction success
+    // Handle transaction success - optimistically update
+    const [lastSuccessHash, setLastSuccessHash] = useState<string | null>(null);
     useEffect(() => {
-        if (isSuccess) {
+        if (isSuccess && hash && hash !== lastSuccessHash && (ethAmount || priceChange !== 0)) {
+            // Calculate optimistic values before clearing
+            const ethVal = ethAmount ? parseFloat(ethAmount) * Number(ethPrice) : 0;
+            const newCollateral = Number(displayedCollateral) * (1 + priceChange / 100) + ethVal;
+            const newHealthFactor = currentDebtValue > 0
+                ? (newCollateral * (Number(liquidationThreshold) / 100)) / currentDebtValue
+                : 0;
+
+            // Update supply assets in parent
+            if (onSupplyUpdate && ethAmount) {
+                onSupplyUpdate(parseFloat(ethAmount), Number(ethPrice));
+            }
+
+            // Optimistically update to simulated values
+            setDisplayedHealthFactor(newHealthFactor);
+            setDisplayedCollateral(newCollateral);
             // Clear inputs
             setEthAmount('');
             setPriceChange(0);
-            // Refetch wallet data
-            if (onTransactionSuccess) {
-                onTransactionSuccess();
-            }
         }
-    }, [isSuccess, onTransactionSuccess]);
+    }, [isSuccess, hash]);
 
     // Calculate simulated values - ensure all values are numbers
     const ethValue = ethAmount ? parseFloat(ethAmount) * Number(ethPrice) : 0;
-    const simulatedCollateral = Number(currentCollateralValue) * (1 + priceChange / 100) + ethValue;
+    const simulatedCollateral = Number(displayedCollateral) * (1 + priceChange / 100) + ethValue;
     const simulatedDebt = Number(currentDebtValue);
     const simulatedHealthFactor = simulatedDebt > 0
         ? (simulatedCollateral * (Number(liquidationThreshold) / 100)) / simulatedDebt
@@ -132,10 +152,10 @@ export function LoanManagement({
         }
     };
 
-    const currentPosition = getBarPosition(currentHealthFactor);
+    const currentPosition = getBarPosition(displayedHealthFactor);
     const simulatedPosition = getBarPosition(simulatedHealthFactor);
 
-    const healthFactorChange = simulatedHealthFactor - currentHealthFactor;
+    const healthFactorChange = simulatedHealthFactor - displayedHealthFactor;
     const isImproving = healthFactorChange > 0;
 
     const handleTopUp = async () => {
@@ -178,10 +198,10 @@ export function LoanManagement({
                     {/* Current Health Factor */}
                     <div className="bg-white rounded-lg p-4 border-2 border-red-100 shadow-sm">
                         <div className="text-sm text-red-900 font-semibold mb-1">Current Health Factor</div>
-                        <div className={`text-3xl font-bold ${getHealthColor(currentHealthFactor)}`}>
-                            {currentHealthFactor.toFixed(2)}
+                        <div className={`text-3xl font-bold ${getHealthColor(displayedHealthFactor)}`}>
+                            {displayedHealthFactor.toFixed(2)}
                         </div>
-                        <div className="text-sm mt-1">{getHealthStatus(currentHealthFactor)}</div>
+                        <div className="text-sm mt-1">{getHealthStatus(displayedHealthFactor)}</div>
                     </div>
 
                     {/* Health Factor Bar */}
@@ -194,7 +214,7 @@ export function LoanManagement({
                                 style={{ left: `${currentPosition}%` }}
                             >
                                 <div className="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded whitespace-nowrap font-bold">
-                                    Current: {currentHealthFactor.toFixed(2)}
+                                    Current: {displayedHealthFactor.toFixed(2)}
                                 </div>
                             </div>
                             {/* Simulated position indicator */}

@@ -35,7 +35,6 @@ export function HomePage() {
                 setData(null);
             } else {
                 const result = await response.json();
-                console.log('API Response:', result);
                 setData(result);
                 setError(null);
             }
@@ -58,11 +57,19 @@ export function HomePage() {
         }
     }, [address, isConnected]);
 
+    // Local state for optimistic updates
+    const [displayedSupplyAssets, setDisplayedSupplyAssets] = useState<any[]>([]);
+
     const wallet = Array.isArray(data) ? data[0] : null;
     const lendingPosition = wallet?.assetByProtocols?.aave3?.chains?.ethereum?.protocolPositions?.LENDING?.protocolPositions?.[0];
-    const supplyAssets = lendingPosition?.supplyAssets || [];
+    const fetchedSupplyAssets = lendingPosition?.supplyAssets || [];
     const borrowAssets = lendingPosition?.borrowAssets || [];
-    const hasAavePositions = supplyAssets.length > 0 || borrowAssets.length > 0;
+    const hasAavePositions = fetchedSupplyAssets.length > 0 || borrowAssets.length > 0;
+
+    // Update displayed assets when fetched data changes
+    useEffect(() => {
+        setDisplayedSupplyAssets(fetchedSupplyAssets);
+    }, [JSON.stringify(fetchedSupplyAssets)]);
 
     // ETH market parameters for Aave V3
     const marketParams = {
@@ -72,7 +79,7 @@ export function HomePage() {
 
     // Calculate health factor
     // collateral_value = sum of (supplied * price) = sum of values
-    const collateralValue = supplyAssets.reduce((sum: number, asset: any) => sum + asset.value, 0);
+    const collateralValue = displayedSupplyAssets.reduce((sum: number, asset: any) => sum + asset.value, 0);
     // debt_value = sum of (borrowed * price) = sum of values
     const debtValue = borrowAssets.reduce((sum: number, asset: any) => sum + asset.value, 0);
     // HF = (collateral_value * liquidation_threshold) / debt_value
@@ -80,6 +87,21 @@ export function HomePage() {
     const healthFactor = debtValue > 0
         ? (collateralValue * liquidationThresholdDecimal) / debtValue
         : 0;
+
+    // Callback to update supply assets optimistically
+    const handleSupplyUpdate = (ethAmount: number, ethPrice: number) => {
+        const updatedAssets = displayedSupplyAssets.map((asset: any) => {
+            if (asset.symbol.toLowerCase() === 'weth' || asset.symbol.toLowerCase() === 'eth') {
+                const ethValue = ethAmount * ethPrice;
+                return {
+                    ...asset,
+                    value: parseFloat(asset.value) + ethValue
+                };
+            }
+            return asset;
+        });
+        setDisplayedSupplyAssets(updatedAssets);
+    };
 
     return (
         <div className="flex flex-col items-center min-h-screen bg-white p-8">
@@ -117,7 +139,7 @@ export function HomePage() {
                                 {/* Market Parameters with Supply/Borrow */}
                                 <MarketParameters
                                     {...marketParams}
-                                    supplyAssets={supplyAssets}
+                                    supplyAssets={displayedSupplyAssets}
                                     borrowAssets={borrowAssets}
                                 />
 
@@ -128,13 +150,9 @@ export function HomePage() {
                                         currentDebtValue={debtValue}
                                         currentHealthFactor={healthFactor}
                                         liquidationThreshold={marketParams.liquidationThreshold}
-                                        supplyAssets={supplyAssets}
+                                        supplyAssets={fetchedSupplyAssets}
                                         borrowAssets={borrowAssets}
-                                        onTransactionSuccess={() => {
-                                            if (address) {
-                                                fetchWalletData(address);
-                                            }
-                                        }}
+                                        onSupplyUpdate={handleSupplyUpdate}
                                     />
                                 )}
                             </>
